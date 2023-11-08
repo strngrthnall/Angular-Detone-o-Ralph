@@ -1,0 +1,22 @@
+.panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 1rem 0 0;
+  &__col {
+    &__square {
+      border: solid 1px black;
+      background-color: #24dfa0;
+
+      height: 150px;
+      width: 150px;
+    }
+  }
+}
+
+.enemy {
+  background-image: url('../../assets/imgs/ralph.png');
+  background-size: cover;
+  background-position: center center;
+}

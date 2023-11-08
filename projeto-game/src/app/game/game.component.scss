@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  height: 100vh;
+
+  background-image: url('../../assets/imgs/wall.png');
+}
+
+.game-over {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+  background-color: rgba(0, 0, 0, 0.562);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+
+  & > h1 {
+    margin-bottom: 16px;
+    color: red;
+  }
+
+  & > a, & > span {
+    padding: 16px;
+    color: #fff;
+  }
+
+  & > a > span:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+  }
+}
+
+.hidden {
+  display: none;
+}

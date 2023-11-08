@@ -1,0 +1,47 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+
+  background-image: url('../../assets/imgs/wall.png');
+
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  width: 100vw;
+  height: 25vh;
+
+  background-color: #000000;
+  border: 5px solid #b99e00;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-shadow: 1px 1px 2px #ffd900;
+
+  &__title {
+    color: #ff0000;
+    margin: 16px;
+  }
+
+  &__exclaimer {
+    color: #fff;
+  }
+
+  &__buttons {
+    margin: 16px 0;
+
+    &__button {
+      padding: 0 32px;
+      color: #fff;
+    }
+
+    &__button:hover {
+      cursor: pointer;
+      filter: brightness(70%);
+    }
+  }
+}
