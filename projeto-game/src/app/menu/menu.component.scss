@@ -1,3 +1,4 @@
+
 .container {
   height: 100vh;
   width: 100vw;
@@ -45,3 +46,31 @@
     }
   }
 }
+
+@media screen and (max-width: 522px) {
+  .menu {
+    height: 70vh;
+    justify-content: space-between;
+    padding: 48px;
+
+    &__title {
+      font-size: 6vh;
+      text-align: center;
+    }
+
+    &__exclaimer {
+      text-align: center;
+    }
+
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+
+      &__button {
+        padding: 16px;
+      }
+    }
+  }
+
+}
+

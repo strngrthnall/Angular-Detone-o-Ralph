@@ -66,6 +66,7 @@ export class GameComponent {
         state.values.currentTime--
         state.view.timeLeft.textContent = state.values.currentTime
       }else {
+        this.removeEnemy(state)
         this.playSound('lost')
         state.view.gameOverText.textContent = `Seu tempo acabou. \nSeu resultado foi ${state.values.result}`
         clearInterval(state.values.timeIntervalId)
