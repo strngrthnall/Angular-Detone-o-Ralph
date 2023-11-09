@@ -92,11 +92,11 @@ export class GameComponent {
 
   setDificulty(state: any) {
     if(this.route.snapshot.paramMap.get('dificulty') === 'easy') {
-      state.values.gameVelocity = 1200
+      state.values.gameVelocity = 1300
     } else if(this.route.snapshot.paramMap.get('dificulty') === 'medium') {
       state.values.gameVelocity = 1000
     } else {
-      state.values.gameVelocity = 800
+      state.values.gameVelocity = 500
     }
   }
 
